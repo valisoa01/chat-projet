@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <h1>Chat en temps réel</h1>
+      <h1>Hello Guys</h1>
       <ul>
         {messages.map((msg, idx) => (
           <li key={idx}>{msg}</li>
