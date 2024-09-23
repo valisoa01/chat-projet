@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Importing necessary components
 import io from 'socket.io-client';
-
+import Login from './pages/login';
 const socket = io('http://localhost:3001');  // Connexion au backend
 
 function App() {
@@ -23,25 +24,14 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Chat en temps réel</h1>
-      <h1>Hello Guys</h1>
-      <ul>
-        {messages.map((msg, idx) => (
-          <li key={idx}>{msg}</li>
-        ))}
-      </ul>
-      <form onSubmit={sendMessage}>
-        <input 
-          value={message} 
-          onChange={(e) => setMessage(e.target.value)} 
-          placeholder="Votre message..." 
-        />
-        <button type="submit">Envoyer</button>
-      </form>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-  <h1>Hello world</h1>
 }
 
 export default App;

@@ -9,11 +9,10 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-// Servir le frontend
-app.use(express.static(path.join(__dirname, 'frontend/build'))); // Remplacez 'frontend' par le nom de votre dossier
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
 });
 
 // Démarrer le serveur

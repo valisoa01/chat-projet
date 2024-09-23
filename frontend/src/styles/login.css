@@ -1,0 +1,7 @@
+.container1{
+    background-image:url(https://cdn.pixabay.com/photo/2020/05/15/17/54/box-5174457_960_720.jpg);
+    height: 500px;
+    display: flex; /* Make the container a flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically (already done with h-screen) */
+}
