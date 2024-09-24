@@ -1,0 +1,78 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+/* Login component styles */
+div {
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+
+}
+
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #2b1515;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #010408;
+  box-shadow: 0 0 5px rgba(30, 114, 204, 0.5);
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  color: red;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button:last-of-type {
+  background-color: #28a745;
+}
+
+button:last-of-type:hover {
+  background-color: #218838;
+}
