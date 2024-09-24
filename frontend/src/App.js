@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/ HomePage"; // Utilise "Body" avec une majuscule
 import Login from "./pages/login";
 
 function App() {
@@ -6,10 +7,14 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="*" element={<Login />} />
+        <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<Login />} />
+
+ 
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
+
 export default App;
